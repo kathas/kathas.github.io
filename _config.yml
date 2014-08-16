@@ -1,0 +1,3 @@
+exclude:     ['README.md', 'Readme.txt', 's3_website.yml']
+keep_files:  ['.git']
+timezone:    nil

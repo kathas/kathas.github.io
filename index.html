@@ -1,0 +1,31 @@
+---
+title: Katha.us - Chalisa and Aarti for most commonly used hindu gods
+home_active: active
+layout: bs-main
+meta-description: Includes Chalisa and Aarti for god durga ganesh hanuman bajrang bali maha kali krishna laxmi ram sai baba saraswati shani shiv vishnu
+---
+<div class="container">
+	<div class="panel panel-primary">
+		<div class="panel-body">Please select the Chalisa or Aarti button button next to God's name which you want to pray.</div>
+	</div>
+	<div class="row container">
+    	<div class="col-md-60" align='center'>
+            <div class="row">
+				<script type="text/javascript">
+					for (var i = 0; i < gpListItems.length; i++) {
+						document.write("<div class='col-sm-4'>");
+						document.write("<a id='gdelement'" + i + "' href='./" + gpListItems[i][1] + "/chalisa.html'>");
+						document.write("<img class='img-thumbnail' src='/img/" + gpListItems[i][1] + ".jpg' alt='" + gpListItems[i][0] + "'>");
+						document.write("<header class='entry-header'>");
+						document.write("<h4> " + gpListItems[i][0] + " </h4></a>");
+						if (gpListItems[i][2]) {
+							document.write("<p>" + gpListItems[i][2] + "</p>");
+						}
+						document.write("</header></div>");						
+					}
+				</script>            	
+            </div>
+    	</div>
+    </div><br>
+	{% include social.html %}	
+</div>
